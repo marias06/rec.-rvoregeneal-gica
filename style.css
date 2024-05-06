@@ -1,0 +1,115 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.arvore {
+    position: relative;
+    width: 800px;
+    height: 600px;
+    background-color: #fff;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.membro {
+    position: absolute;
+    text-align: center;
+    width: 100px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #7fbf7f;
+    line-height: 50px;
+    color: white;
+}
+
+.pai {
+    top: 100px;
+    left: 200px;
+}
+
+.mae {
+    top: 100px;
+    right: 200px;
+}
+
+.filho1 {
+    top: 350px;
+    left: 100px;
+}
+
+.filho2 {
+    top: 350px;
+    left: 300px;
+}
+
+.filho3 {
+    top: 350px;
+    right: 300px;
+}
+
+.filho4 {
+    top: 350px;
+    right: 100px;
+}
+
+.linha {
+    position: absolute;
+    background-color: #7fbf7f;
+    z-index: -1;
+}
+
+.linha.pai {
+    top: 150px;
+    left: 250px;
+    width: 200px;
+    height: 200px;
+    transform: rotate(-45deg);
+}
+
+.linha.mae {
+    top: 150px;
+    right: 250px;
+    width: 200px;
+    height: 200px;
+    transform: rotate(45deg);
+}
+
+.linha.filho1 {
+    top: 400px;
+    left: 150px;
+    width: 100px;
+    height: 200px;
+    transform: rotate(90deg);
+}
+
+.linha.filho2 {
+    top: 400px;
+    left: 350px;
+    width: 100px;
+    height: 200px;
+    transform: rotate(90deg);
+}
+
+.linha.filho3 {
+    top: 400px;
+    right: 350px;
+    width: 100px;
+    height: 200px;
+    transform: rotate(90deg);
+}
+
+.linha.filho4 {
+    top: 400px;
+    right: 150px;
+    width: 100px;
+    height: 200px;
+    transform: rotate(90deg);
+}
