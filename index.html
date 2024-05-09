@@ -1,38 +1,95 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <title>Minha Árvore Genealógica</title>
 
-</head>
-<body>
+<center>
 
-    <center>
-
+   
     <h1> MINHA FAMÍLIA </h1>
 
     <p> Minha família é consideravelmente grande, contando com 5 tios e 1 tia por parte de pai, 1 tio e 1 tia por parte de mãe. Tenho apenas avós, e minha família é composta por mim, minha mãe e meu pai</p> 
 
-    <div class="arvore">
-        <div class="membro pai">Pai</div>
-        <div class="membro mae">Mãe</div>
-        <div class="membro filho1">Filho 1</div>
-        <div class="membro filho2">Filho 2</div>
-        <div class="membro filho3">Filho 3</div>
-        <div class="membro filho4">Filho 4</div>
+   </center>
 
-        <div class="linha pai"></div>
-        <div class="linha mae"></div>
-        <div class="linha filho1"></div>
-        <div class="linha filho2"></div>
-        <div class="linha filho3"></div>
-        <div class="linha filho4"></div>
+    <style>
+
+a{
+    text-decoration: none;
+    color: darkslategray;
+}
+
+        .family {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 50px;
+        }
+
+        .person {
+            width: 200px;
+            height: 100px;
+            border-radius: 50%;
+            background-color: lightcoral;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .person p {
+            margin: 0;
+            text-align: center;
+        }
+
+body
+{
+    background-color: pink;
+    color: black;
+    font-size: 14pt;
+    font-family: Arial, Helvetica, sans-serif;
+
+    background-image: linear-gradient( 90deg, pink, rgb(0, 255, 128));
+}
+    </style>
+
+</head>
+<body>
+
+<div class="family">
+    <div class="person">
+       <a href="Avô Paterno.html" target="_blank">Avô Paterno</a>
     </div>
+    <div class="person">
+      <a href="Avó Materna.html" target="_blank"> Avó Materna</a>
+    </div>
+</div>
 
-    </center>
-    
+<div class="family">
+    <div class="person">
+        <a href="AVó Paterna.html" target="_blank"> Avó Paterna</a>
+    </div>
+    <div class="person">
+        <a href="Avô Materno.html" target="_blank"> Avô Materno </a>
+    </div>
+</div>
 
-    
+<div class="family">
+    <div class="person">
+        <a href="Meu Pai.html" target="_blank">Pai</a>
+    </div>
+    <div class="person">
+        <a href="Minha Mãe.html" target="_blank"> Mãe </a>
+    </div>
+</div>
+
+<center>
+<div class="person">
+    <a href="Eu.html" target="_blank"> Eu </a>
+</div>
+</div>
+</center>
+
 </body>
+
 </html>
